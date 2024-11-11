@@ -1,4 +1,4 @@
-{% load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en-US">
    <head>
@@ -7,7 +7,7 @@
       <title>Free responsive business website template</title>
       <link rel="stylesheet" href="{% static 'css/components.css' %}">
       <link rel="stylesheet" href="{% static 'css/icons.css' %}">
-      <link rel="stylesheet" href="% static {'css/responsee.css' %}">
+      <link rel="stylesheet" href="{% static 'css/responsee.css' %}">
       <link rel="stylesheet" href="{% static 'owl-carousel/owl.carousel.css' %}">
       <link rel="stylesheet" href="{% static 'owl-carousel/owl.theme.css' %}">
       <!-- CUSTOM STYLE -->      
@@ -36,14 +36,14 @@
         <nav class="s-12 grid background-none background-primary-hightlight">
            <!-- logo -->
            <a href="index.html" class="m-12 l-3 padding-2x logo">
-              <img src="{% static 'img/logo.svg' %}">
+              <img src="{% static 'img/logo.svg' %}" alt="">
            </a>
            <div class="top-nav s-12 l-9"> 
               <ul class="top-ul right chevron">
-                <li><a href="{% url home%}">Home</a></li>
-                <li><a href="{% url about %}">About Us</a></li>
-                <li><a href="{% url services %}">Services</a></li>
-                <li><a href="{% url gallery%}">Gallery</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
               </ul>
            </div>
@@ -56,15 +56,15 @@
         <section class="grid">
           <!-- Main Carousel -->
           <div class="s-12 margin-bottom carousel-fade-transition owl-carousel carousel-main carousel-nav-white carousel-hide-arrows background-dark">
-          	<div class="item background-image" style="background-image:url(img/carousel-01.jpg)">
+          	<div class="item background-image" style="background-image:url({% static 'img/carousel-01.jpg' %})">
               <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">We are Web design Heroes</p>
               <p class="text-padding text-size-20 text-dark text-uppercase background-white">Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
             </div>
-          	<div class="item background-image" style="background-image:url(img/carousel-02.jpg)">
+          	<div class="item background-image" style="background-image:url({% static 'img/carousel-02.jpg' %})">
               <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">Inspired by Technologies</p>
               <p class="text-padding text-size-20 text-dark text-uppercase background-white">Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
             </div>
-            <div class="item background-image" style="background-image:url(img/carousel-03.jpg)">
+            <div class="item background-image" style="background-image:url({% static 'img/carousel-03.jpg' %})">
               <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">CSS and HTML is our Playground</p>
               <p class="text-padding text-size-20 text-dark text-uppercase background-white">Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam.</p>
             </div>
@@ -83,7 +83,7 @@
           </a>
           
           <!-- Image-->
-          <img class="m-12 l-6 l-row-2 margin-bottom" src="{% static 'img/img-06.jpg' %}">
+          <img class="m-12 l-6 l-row-2 margin-bottom" src="{% static 'img/img-06.jpg' %}>
           
           <a href="/" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-orange">
             <i class="icon-sli-diamond text-size-60 text-white center margin-bottom-15"></i>
@@ -122,10 +122,10 @@
         <h2 class="s-12 text-white text-thin text-size-30 text-white text-uppercase margin-top-bottom-40 center text-center">Top <b>References</b></h2>
         <section class="grid margin">
           <a class="s-12 m-6 margin-bottom" href="gallery.html">
-            <img class="full-img" src="img/portfolio/thumb-01.jpg" alt=""/>
+            <img class="full-img" src="{% static 'img/portfolio/thumb-01.jpg' %}" alt=""/>
           </a>	
           <a class="s-12 m-6 margin-bottom" href="gallery.html">
-            <img class="full-img" src="img/portfolio/thumb-02.jpg" alt=""/>
+            <img class="full-img" src="{% static 'img/portfolio/thumb-02.jpg' %}" alt=""/>
           </a>	
           <a class="s-12 m-6 margin-bottom" href="gallery.html">
             <img class="full-img" src="{% static 'img/portfolio/thumb-03.jpg' %}" alt=""/>
@@ -162,7 +162,7 @@
       <footer class="grid">
         <!-- Footer - top -->
         <!-- Image-->
-        <div class="s-12 l-3 m-row-3 margin-bottom background-image" style="background-image:url(img/img-04.jpg)"></div>
+        <div class="s-12 l-3 m-row-3 margin-bottom background-image" style="background-image:url({% static 'img/img-04.jpg' %})"></div>
         
         <div class="s-12 m-9 l-3 padding-2x margin-bottom background-dark">
            <h2 class="text-strong text-uppercase">Who We Are?</h2>
